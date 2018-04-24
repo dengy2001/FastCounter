@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">识图计数</string>
+    <string name="btn_takephoto">拍照</string>
+    <string name="btn_selectphoto">浏览照片</string>
+    <string name="btn_count">开始计数</string>
+    <string name="btn_Choose0">设定选区</string>
+    <string name="btn_Choose1">确认选区</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_zoom">ZoomActivity</string>
+
+</resources>

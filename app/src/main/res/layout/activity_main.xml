@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deng.fastcounter.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCountresult"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1"
+        app:srcCompat="@drawable/steelpipe01"/>
+
+    <com.deng.fastcounter.MarkPathView
+        android:id="@+id/pathView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/tvCountresult"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:text="计数结果为："
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCircle"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="圆 半 径："
+        app:layout_constraintBottom_toTopOf="@+id/textViewThreshold"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/seekBarCircleDiameter"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewCircle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewThreshold"/>
+
+    <TextView
+        android:id="@+id/textViewThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="阈 值："
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonTakePhoto"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/seekBarThreshold"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewCircle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonTakePhoto"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonTakePhoto"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/takephoto"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonSelectPic"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageButtonTakePhoto"
+        app:srcCompat="@drawable/selectpic"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonCropPic"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageButtonSelectPic"
+        app:srcCompat="@drawable/croppic"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonCount"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/calcnumber"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageButtonCropPic"
+        android:layout_marginLeft="20dp"/>
+
+</android.support.constraint.ConstraintLayout>
